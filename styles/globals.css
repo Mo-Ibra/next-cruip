@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: rgb(21 23 25);
+    color: #fff;
+}
+
+@layer components {
+    .header-color {
+        color: rgb(217 227 234)
+    }
+    .text-color {
+        color: rgb(155 169 180);
+    }
+    .box-bg {
+        background-color: rgb(37 40 44);
+    }
+    .main-color {
+        color: rgb(93 93 255);
+    }
+}

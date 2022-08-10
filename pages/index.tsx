@@ -1,11 +1,14 @@
 import type { NextPage } from "next";
 
+import Header from "../components/header/header";
+
 const Home: NextPage = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <section>
+      <Header />
+    </section>
   )
 }
 
 export default Home;
+
