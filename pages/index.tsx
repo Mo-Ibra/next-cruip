@@ -6,6 +6,7 @@ import Goals from "../sections/goals/goals";
 import Features from "../sections/features/features";
 import News from "../sections/news/news";
 import Trail from "../sections/trail/trail";
+import Footer from "../components/footer/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <Features />
       <News />
       <Trail />
+      <Footer />
     </>
   )
 }
