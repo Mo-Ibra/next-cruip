@@ -4,23 +4,19 @@ import React from 'react';
 
 import { AiOutlineCheck } from 'react-icons/ai';
 
+import Title from '../../components/title/title';
+
 // Images
 import FeaturesImg1 from '../../assets/images/features/1.png';
 import FeaturesImg2 from '../../assets/images/features/2.png';
 import FeaturesImg3 from '../../assets/images/features/3.png';
 
+
 function Goals() {
     return (
         <section className='py-10'>
             <div className="container mx-auto px-10 border-b border-gray-800">
-                <div className='py-5 text-center'>
-                    <span className='bg-green-200 text-green-500 font-bold p-1 px-4 rounded-2xl'>Reach goals that matter</span>
-                    <h3 className='text-4xl font-bold header-color w-3/4 mx-auto my-5'>One product, unlimited solutions</h3>
-                    <p className='text-color my-5 w-2/4 mx-auto text-lg'>
-                        Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.
-                    </p>
-                </div>
+                <Title header='One product, unlimited solutions' hasSpan={true} />
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-16 my-10">
                     <div className='mt-16'>
                         <span className='main-color font-mono text-lg'>More speed. Less spend</span>

@@ -20,4 +20,11 @@ body {
     .main-color {
         color: rgb(93 93 255);
     }
+    .text-main
+    {
+        color: rgb(93 93 255);
+    }
+    .bg-main {
+        color: rgb(93 93 255);
+    }
 }
