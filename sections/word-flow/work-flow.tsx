@@ -8,7 +8,7 @@ import RightSvg from "../../components/header/svg/right-svg";
 
 const WorkFlow = () => {
     return (
-        <section className="py-20 relative">
+        <section className="py-5 pt-20 relative">
             <div className="container mx-auto px-10">
                 <h2 className="header-color text-3xl md:text-3xl lg:text-5xl font-bold w-2/4 mb-10">Refreshing news for developers and designers</h2>
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10 my-10">

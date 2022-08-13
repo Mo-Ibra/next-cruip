@@ -1,4 +1,3 @@
-import { AiOutlineCheck } from "react-icons/ai";
 import Card from "./card/card";
 
 const PricingSection = () => {
