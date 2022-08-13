@@ -27,4 +27,7 @@ body {
     .bg-main {
         background-color: rgb(93 93 255);
     }
+    .bg-main-focus {
+        background-color: rgb(80 80 255);
+    }
 }

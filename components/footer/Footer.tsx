@@ -1,6 +1,5 @@
 import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
 
-
 const Footer = () => {
     return (
         <section className="py-10">
