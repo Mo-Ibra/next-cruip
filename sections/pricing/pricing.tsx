@@ -11,7 +11,7 @@ const PricingSection = () => {
                         <p className='text-color my-5 w-2/4 mx-auto text-lg'>Get the Open PRO plan that fits your needs at a special introductory price.</p>
                     </div>
                 </div>
-                <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-10">
+                <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-10 mb-16">
                     <Card title="Essential" price={49} />
                     <Card title="Premium" price={79} />
                     <Card title="Advanced" price={129} />
