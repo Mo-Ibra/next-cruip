@@ -3,7 +3,7 @@ import Card from "./card/card";
 
 const PricingSection = () => {
     return (
-        <section className='py-24 relative'>
+        <section className='py-10'>
             <div className="container mx-auto px-10 border-b border-gray-800">
                 <div className='text-center'>
                     <div>
