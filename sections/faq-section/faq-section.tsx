@@ -5,7 +5,7 @@ const FaqSection = () => {
         <section className="py-5 relative">
             <div className="container mx-auto px-10 border-b border-gray-800 pb-10">
                 <div className="grid grid-cols-3 gap-4">
-                    <div className="my-10">
+                    <div className="my-10 hidden md:block">
                         <h3 className="mb-2 header-color font-bold text-2xl">Choose a category</h3>
                         <ul>
                             <li className="text-color my-4 cursor-pointer">Frequently Asked Questions</li>

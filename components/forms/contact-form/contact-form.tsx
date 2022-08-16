@@ -6,7 +6,7 @@ const ContactForm = () => {
         <div className="py-5 relative">
             <div className="container mx-auto px-10">
                 <Title header="How can we help you?" hasSpan={false} />
-                <form className="w-2/4 mx-auto">
+                <form className="w-full md:w-3/4 lg:w-2/4 mx-auto">
                     <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-0 md:gap-5">
                         <input type="text" placeholder="First Name" className="block w-full mb-5 p-2 bg-inherit border border-gray-600" />
                         <input type="text" placeholder="Last Name" className="block w-full mb-5 p-2 bg-inherit border border-gray-600" />
