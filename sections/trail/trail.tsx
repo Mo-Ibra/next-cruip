@@ -12,15 +12,15 @@ const Trail = () => {
                     <div className="flex items-center gap-4 my-10 justify-center">
                         <div className="flex items-center gap-2">
                             <AiFillStar className="text-main" />
-                            <p className="font-semibold text-color">Free 14-day trial</p>
+                            <p className="text-xs md:text-base font-semibold text-color">Free 14-day trial</p>
                         </div>
                         <div className="flex items-center gap-2">
                             <AiFillStar className="text-main" />
-                            <p className="font-semibold text-color">Free 14-day trial</p>
+                            <p className="text-xs md:text-base font-semibold text-color">Free 14-day trial</p>
                         </div>
                         <div className="flex items-center gap-2">
                             <AiFillStar className="text-main" />
-                            <p className="font-semibold text-color">Free 14-day trial</p>
+                            <p className="text-xs md:text-base font-semibold text-color">Free 14-day trial</p>
                         </div>
                     </div>
                 </div>

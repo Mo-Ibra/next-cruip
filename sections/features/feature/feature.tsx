@@ -14,7 +14,7 @@ const Feature = ({ icon, name }: FeatureInterface) => {
             </div>
             <div>
                 <h3 className="header-color text-2xl my-2 font-bold">{name}</h3>
-                <p className="text-color text-lg">
+                <p className="text-color px-16 text-xs md:text-sm md:px-8">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
                 </p>

@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container mx-auto px-10">
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
                     <div>
-                        <p className="text-color">
+                        <p className="text-color text-sm">
                             Lorem ipsum is placeholder text commonly used in the graphic,
                             print, and publishing industries for previewing layouts and visual mockups.
                         </p>

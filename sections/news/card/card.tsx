@@ -11,7 +11,7 @@ const Card = ({ imageUrl, title }: CardInterface) => {
             <div className="p-5">
                 <div>
                     <h3 className="text-header text-2xl font-bold my-5">{title}</h3>
-                    <p className="text-color text-lg my-5">
+                    <p className="text-color text-sm md:text-lg my-5">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex.

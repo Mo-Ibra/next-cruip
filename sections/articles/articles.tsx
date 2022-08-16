@@ -26,7 +26,7 @@ const Articles = () => {
                     <h3 className="header-color my-5 text-2xl font-bold">Latest articles</h3>
                     <div className="border-b border-gray-600" />
                 </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 gap-10">
                     <Article
                         articleImg={ArticleImg1}
                         avatarImg={AvatarImg1}

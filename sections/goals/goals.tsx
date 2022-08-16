@@ -29,15 +29,15 @@ function Goals() {
                         <ul>
                             <li className='text-color my-2 text-lg flex items-center gap-2'>
                                 <AiOutlineCheck className='main-color' />
-                                Duis aute irure dolor in reprehenderit
+                                <p className='text-sm md:text-base'>Duis aute irure dolor in reprehenderit</p>
                             </li>
                             <li className='text-color my-2 text-lg flex items-center gap-2'>
                                 <AiOutlineCheck className='main-color' />
-                                Excepteur sint occaecat
+                                <p className='text-sm md:text-base'>Excepteur sint occaecat</p>
                             </li>
                             <li className='text-color my-2 text-lg flex items-center gap-2'>
                                 <AiOutlineCheck className='main-color' />
-                                Amet consectetur adipiscing elit
+                                <p className='text-sm md:text-base'>Amet consectetur adipiscing elit</p>
                             </li>
                         </ul>
                     </div>
@@ -60,15 +60,15 @@ function Goals() {
                         <ul>
                             <li className='text-color my-2 text-lg flex items-center gap-2'>
                                 <AiOutlineCheck className='main-color' />
-                                Duis aute irure dolor in reprehenderit
+                                <p className='text-sm md:text-base'>Duis aute irure dolor in reprehenderit</p>
                             </li>
                             <li className='text-color my-2 text-lg flex items-center gap-2'>
                                 <AiOutlineCheck className='main-color' />
-                                Excepteur sint occaecat
+                                <p className='text-sm md:text-base'>Excepteur sint occaecat</p>
                             </li>
                             <li className='text-color my-2 text-lg flex items-center gap-2'>
                                 <AiOutlineCheck className='main-color' />
-                                Amet consectetur adipiscing elit
+                                <p className='text-sm md:text-base'>Amet consectetur adipiscing elit</p>
                             </li>
                         </ul>
                     </div>
@@ -85,15 +85,15 @@ function Goals() {
                         <ul>
                             <li className='text-color my-2 text-lg flex items-center gap-2'>
                                 <AiOutlineCheck className='main-color' />
-                                Duis aute irure dolor in reprehenderit
+                                <p className='text-sm md:text-base'>Duis aute irure dolor in reprehenderit</p>
                             </li>
                             <li className='text-color my-2 text-lg flex items-center gap-2'>
                                 <AiOutlineCheck className='main-color' />
-                                Excepteur sint occaecat
+                                <p className='text-sm md:text-base'>Excepteur sint occaecat</p>
                             </li>
                             <li className='text-color my-2 text-lg flex items-center gap-2'>
                                 <AiOutlineCheck className='main-color' />
-                                Amet consectetur adipiscing elit
+                                <p className='text-sm md:text-base'>Amet consectetur adipiscing elit</p>
                             </li>
                         </ul>
                     </div>
