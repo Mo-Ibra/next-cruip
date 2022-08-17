@@ -7,10 +7,12 @@ import Features from "../sections/features/features";
 import News from "../sections/news/news";
 import Trail from "../sections/trail/trail";
 import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/navbar";
 
 const Home: NextPage = () => {
   return (
     <>
+      <Navbar />
       <Header />
       <Goals />
       <Features />
