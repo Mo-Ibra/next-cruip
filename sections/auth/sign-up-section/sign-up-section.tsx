@@ -1,9 +1,32 @@
 import Link from "next/link";
 import RightSvg from "../../../components/header/svg/right-svg";
 
+import { motion } from 'framer-motion';
+
 const SignUpSection = () => {
+
+    const sectionVariants = {
+        initial: {
+            y: -100,
+            opacity: 0
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    }
+
     return (
-        <section className="py-10 relative">
+        <motion.section
+            className="py-10 relative"
+            variants={sectionVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <div className="container mx-auto px-10">
                 <div className="text-center">
                     <h2 className="header-color text-2xl md:text-3xl lg:text-5xl font-bold mx-auto w-3/4">Welcome back. We exist to make entrepreneurship easier.</h2>
@@ -31,7 +54,7 @@ const SignUpSection = () => {
             <div className="absolute top-0 right-0">
                 <RightSvg />
             </div>
-        </section>
+        </motion.section>
     )
 }
 

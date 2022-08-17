@@ -11,10 +11,32 @@ import FeaturesImg1 from '../../assets/images/features/1.png';
 import FeaturesImg2 from '../../assets/images/features/2.png';
 import FeaturesImg3 from '../../assets/images/features/3.png';
 
+import { motion } from 'framer-motion';
 
 function Goals() {
+
+    const sectionVariants = { 
+        initial: {
+            y: -100,
+            opacity: 0
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    };
+
     return (
-        <section className='py-10'>
+        <motion.section
+            className='py-10'
+            variants={sectionVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <div className="container mx-auto px-10 border-b border-gray-800">
                 <Title header='One product, unlimited solutions' hasSpan={true} />
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-16 my-10">
@@ -102,7 +124,7 @@ function Goals() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

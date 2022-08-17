@@ -7,6 +7,8 @@ import HeaderImg from '../../assets/images/header.png';
 import LeftSvg from './svg/left-svg';
 import RightSvg from './svg/right-svg';
 
+import { motion } from 'framer-motion';
+
 const Header: NextComponentType = () => {
 
     const imageContainerStyles = {
@@ -15,8 +17,28 @@ const Header: NextComponentType = () => {
         margin: 'auto'
     };
 
+    const headerVariants = { 
+        initial: {
+            y: -100,
+            opacity: 0
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    };
+
     return (
-        <header className='py-24 relative'>
+        <motion.header
+            className='py-24 relative'
+            variants={headerVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <div className="container mx-auto px-10 border-b border-gray-800">
                 <div className='text-center'>
                     <div>
@@ -57,7 +79,7 @@ const Header: NextComponentType = () => {
             <div className='absolute top-0 left-0 -z-10 md:block hidden'>
                 <LeftSvg />
             </div>
-        </header>
+        </motion.header>
     )
 };
 

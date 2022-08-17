@@ -1,12 +1,36 @@
 import Image, { StaticImageData } from 'next/image';
 
+import { motion } from 'framer-motion';
+
 interface CardInterface {
     imageUrl: StaticImageData;
     title: string;
 }
+
 const Card = ({ imageUrl, title }: CardInterface) => {
+
+    const cardVariants = {
+        initial: {
+            x: -100,
+            opacity: 0
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    }
+
     return (
-        <div className="box-bg">
+        <motion.div
+            className="box-bg"
+            variants={cardVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <Image src={imageUrl} />
             <div className="p-5">
                 <div>
@@ -19,7 +43,7 @@ const Card = ({ imageUrl, title }: CardInterface) => {
                     <button className="bg-main py-2 px-4">Learn More</button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

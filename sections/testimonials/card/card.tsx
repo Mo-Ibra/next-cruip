@@ -1,7 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 
-// Avatar Img
-import AvatarImg1 from '../../assets/images/avatars/1.jpg';
+import { motion } from 'framer-motion';
 
 interface CardInterface {
     imageUrl: StaticImageData;
@@ -10,8 +9,29 @@ interface CardInterface {
 }
 
 const Card = ({ imageUrl, name, role }: CardInterface) => {
+
+    const cardVariants = {
+        initial: {
+            x: -100,
+            opacity: 0
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    }
+
     return (
-        <div className="box-bg p-5 my-5 rounded-sm relative">
+        <motion.div
+            className="box-bg p-5 my-5 rounded-sm relative"
+            variants={cardVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <div className="absolute top-3 left-3">
                 <Image src={imageUrl} style={{ borderRadius: '50%' }} width="48px" height="48px" />
             </div>
@@ -23,7 +43,7 @@ const Card = ({ imageUrl, name, role }: CardInterface) => {
             <div>
                 <p className="font-semibold text-lg">{name} - <span className="text-main">{role}</span></p>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

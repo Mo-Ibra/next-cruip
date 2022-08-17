@@ -1,13 +1,36 @@
 import { AiOutlineCheck } from "react-icons/ai";
 
+import { motion } from 'framer-motion';
+
 interface CardInterface {
     title: string;
     price: number;
 }
 
 const Card = ({ title, price }: CardInterface) => {
+    
+    const cardVariants = {
+        initial: {
+            y: -100,
+            opacity: 0
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    }
+
     return (
-        <div className="box-bg p-5 my-10 rounded-sm">
+        <motion.div
+            className="box-bg p-5 my-10 rounded-sm"
+            variants={cardVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <span className="main-color font-bold text-3xl">{title}</span>
             <h2 className="text-color text-2xl my-3">$<span className="text-4xl font-bold header-color">{price}</span>/mo</h2>
             <p className="text-color my-3">Better insights for growing businesses that want more customers</p>
@@ -34,7 +57,7 @@ const Card = ({ title, price }: CardInterface) => {
             <div className="mt-20 mb-5 text-center">
                 <button className="bg-main w-full py-2 hover:bg-main-focus duration-300">Start Free Trail</button>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

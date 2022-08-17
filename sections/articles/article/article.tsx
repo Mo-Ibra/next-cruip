@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 interface ArticleInterface {
     articleImg: StaticImageData;
@@ -9,8 +10,29 @@ interface ArticleInterface {
 }
 
 const Article = ({ articleImg, avatarImg, title, author }: ArticleInterface) => {
+
+    const articleVariants = {
+        initial: {
+            x: -100,
+            opacity: 0
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    };
+
     return (
-        <div className="my-2">
+        <motion.div
+            className="my-2"
+            variants={articleVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <div>
                 <Image src={articleImg} />
             </div>
@@ -32,7 +54,7 @@ const Article = ({ articleImg, avatarImg, title, author }: ArticleInterface) => 
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

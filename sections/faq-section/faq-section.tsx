@@ -1,6 +1,23 @@
 import RightSvg from "../../components/header/svg/right-svg";
 
+import { motion } from 'framer-motion';
+
 const FaqSection = () => {
+
+    const faqVariants = {
+        initial: {
+            x: -100,
+            opacity: 0
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    }
+
     return (
         <section className="py-5 relative">
             <div className="container mx-auto px-10 border-b border-gray-800 pb-10">
@@ -15,7 +32,13 @@ const FaqSection = () => {
                             <li className="text-color my-4 cursor-pointer">Payments FAQ’s</li>
                         </ul>
                     </div>
-                    <div className="lg:col-span-2 col-span-3">
+                    <motion.div
+                        className="lg:col-span-2 col-span-3"
+                        variants={faqVariants}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                    >
                         <div className="my-10">
                             <h2 className="header-color font-bold text-4xl my-2">FAQ’s – Frequently Asked Questions</h2>
                             <p className="text-color">Last updated - <span className="text-main">June 30, 2020</span></p>
@@ -68,7 +91,7 @@ const FaqSection = () => {
                                 Quis enim lobortis scelerisque fermentum.
                             </p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             <div className="absolute top-0 right-0">

@@ -1,9 +1,32 @@
 import RightSvg from "../../header/svg/right-svg";
 import Title from "../../title/title";
 
+import { motion } from 'framer-motion';
+
 const ContactForm = () => {
+
+    const formVariants = {
+        initial: {
+            y: -100,
+            opacity: 0
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    }
+
     return (
-        <div className="py-5 relative">
+        <motion.div
+            className="py-5 relative"
+            variants={formVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <div className="container mx-auto px-10">
                 <Title header="How can we help you?" hasSpan={false} />
                 <form className="w-full md:w-3/4 lg:w-2/4 mx-auto">
@@ -20,7 +43,7 @@ const ContactForm = () => {
             <div className="absolute top-0 right-0 -z-10">
                 <RightSvg />
             </div>
-        </div>
+        </motion.div>
     )
 }
 

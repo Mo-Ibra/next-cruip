@@ -2,9 +2,31 @@ import { AiFillStar } from "react-icons/ai";
 
 import Title from "../../components/title/title";
 
+import { motion } from 'framer-motion';
+
 const Trail = () => {
+
+    const trailVariants = {
+        initial: {
+            y: -100,
+            opacity: 0
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    }
+
     return (
-        <section>
+        <motion.section
+            variants={trailVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <div className="container px-10 mx-auto border-b border-gray-800">
                 <Title header="Ready to create better products?" hasSpan={false} />
                 <div className="text-center">
@@ -25,7 +47,7 @@ const Trail = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

@@ -1,11 +1,34 @@
+import { motion } from 'framer-motion';
+
 interface FeatureInterface {
     icon: JSX.Element;
     name: string;
 }
 
 const Feature = ({ icon, name }: FeatureInterface) => {
+
+    const featureVariants = {
+        initial: {
+            x: -100,
+            opacity: 0
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    }
+
     return (
-        <div className="text-center">
+        <motion.div
+            className="text-center"
+            variants={featureVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <div className="icon__provider">
                 {
                     icon
@@ -19,7 +42,7 @@ const Feature = ({ icon, name }: FeatureInterface) => {
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
                 </p>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

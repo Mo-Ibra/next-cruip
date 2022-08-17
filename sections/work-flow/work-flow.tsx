@@ -6,9 +6,32 @@ import AvatarImg from '../../assets/images/avatars/1.jpg';
 
 import RightSvg from "../../components/header/svg/right-svg";
 
+import { motion } from 'framer-motion';
+
 const WorkFlow = () => {
+
+    const sectionVariants = {
+        initial: {
+            y: -100,
+            opacity: 0
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 2
+            }
+        }
+    }
+
     return (
-        <section className="py-5 pt-20 relative">
+        <motion.section
+            className="py-5 pt-20 relative"
+            variants={sectionVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+        >
             <div className="container mx-auto px-10">
                 <h2 className="header-color text-3xl md:text-3xl lg:text-5xl font-bold w-2/4 mb-10">Refreshing news for developers and designers</h2>
                 <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10 my-10">
@@ -36,7 +59,7 @@ const WorkFlow = () => {
             <div className='absolute top-0 right-0 -z-10'>
                 <RightSvg />
             </div>
-        </section>
+        </motion.section>
     )
 }
 
