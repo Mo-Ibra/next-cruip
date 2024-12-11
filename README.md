@@ -28,7 +28,7 @@
 
 ## Live demo
 
-Check the live demo here 👉️ [https://next-cruip-gqwqigzzj-dev-maradona.vercel.app/](https://next-cruip-gqwqigzzj-dev-maradona.vercel.app/)
+Check the live demo here 👉️ [https://next-cruip-gqwqigzzj-dev-maradona.vercel.app/](next-cruip.vercel.app/)
 
 ## Table of contents
 
