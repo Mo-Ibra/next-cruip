@@ -28,7 +28,7 @@
 
 ## Live demo
 
-Check the live demo here 👉️ [Take a look](next-cruip.vercel.app/)
+Check the live demo here 👉️ [Take a look](https://next-cruip.vercel.app/)
 
 ## Table of contents
 
